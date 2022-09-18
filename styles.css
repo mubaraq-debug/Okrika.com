@@ -1,0 +1,209 @@
+/* global styling */
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@300&family=Montserrat:wght@200&family=Orbitron&family=Poppins:wght@200;300;400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* section one styling */
+
+.section_one {
+    height: 43.75em;
+}
+
+.mdi-menu {
+    display: none;
+}
+
+.section_one nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2.4rem; 
+}
+
+nav h1 {
+    font-size: 1.7rem;
+}
+
+nav .nav-list {
+    display: flex;
+}
+
+.nav-list li,a {
+    text-decoration: none;
+    list-style-type: none;
+    color: #000000;
+    margin-left: 1.4rem;
+    font-size: 1.11rem;
+}
+
+.section_one .showcase_area {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 1em;
+}
+
+.showcase_area img {
+    height: 500px;
+    width: 550px;
+    margin-right: 70px;
+}
+
+.showcase_area .display_text {
+    margin-right: 9em;
+    padding-top: 7em;
+}
+
+.display_text h1 {
+    font-size: 2.5rem;
+    height: 40px;
+    width: 470px;
+    line-height: 1.5;
+}
+
+.display_text button {
+   margin-top: 5em;
+   width: 200px;
+   height: 70px;
+   font-size: 1.5rem;
+   border-radius: 10px;
+   border-style: none;
+   outline: none;
+   background-color: rgba(17, 180, 112, 0.822);
+   color: #fff;
+}
+
+/* section two styling */
+
+.section_two {
+    background-color: rgba(20, 17, 17, 0.89);
+    text-align: center;
+    height: 32em;
+    color: #fff;
+}
+
+.section_two h2 {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.section_two .advert_section {
+    display: flex;
+    justify-content: center;
+    gap: 5.5rem;
+}
+
+.advert_section figcaption a {
+    color: #fff;
+    font-size:1.5rem;
+}
+
+/* section three styling */
+
+.testimonial_section {
+    height: 45em;
+    background-color: rgba(241, 18, 18, 0.712);
+    text-align: center;
+    color: #fff;
+}
+
+.testimonial_section h2 {
+    padding-top: 2em;
+    padding-bottom: 4em;
+    font-size: 2rem;
+}
+
+.customer_testimonials {
+    display: flex;
+    justify-content: center;
+    gap: 5.5rem
+}
+
+.customer_testimonials img {
+    height: 200px;
+    width: 200px;
+    border-radius: 120px;
+}
+
+.customer_testimonials  h4 {
+    padding: 1.2em;
+}
+
+.customer_testimonials p {
+    width: 300px;
+    height: 70px;
+}
+
+/* section four */
+
+.video_section {
+    height: 35em;
+    background-color: rgb(15, 139, 240);
+    text-align: center;
+    color: #fff;
+}
+
+.video_section h2 {
+    padding-top: 2em;
+}
+
+.video_section .video_box video {
+    height: 400px;
+    width: 500px;
+}
+
+/* section five */
+
+.mail_section {
+    height: 32em;
+    
+    text-align: center;
+}
+
+.mail_section h2 {
+    padding-top: 5em;
+    font-size: 2rem;
+    padding-bottom: 1em;
+}
+
+.mail_section input {
+    width: 600px;
+    height: 60px;
+    border-radius: 10px;
+    outline: none;
+    border-style: none;
+    background-color: rgba(207, 189, 189, 0.733);
+    text-align: center;
+    color: #000000;
+}
+
+.mail_section button {
+    width: 150px;
+    height: 55px;
+    background-color: rgba(241, 18, 18, 0.712);
+    color: #fff;
+    margin-top: 1.5em;
+    border-style: none;
+    border-radius: 10px;
+    outline: none;
+    font-size: 1rem;
+}
+
+/* copyright section */
+
+footer {
+    background-color: rgba(20, 17, 17, 0.89);
+    height: 200px;
+    text-align: center;
+    color: #fff;
+}
+
+footer p {
+    padding-top: 4em;
+}
+
+footer .socials {
+    padding-top: 2em;
+}
