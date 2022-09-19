@@ -207,3 +207,220 @@ footer p {
 footer .socials {
     padding-top: 2em;
 }
+
+/* media queries */
+
+@media only screen and (max-width: 320px) {
+    /* section one styling */
+
+.section_one {
+    height: 80em;
+    width: 320px;
+}
+
+.mdi-menu {
+    display: block;
+    font-size: 50px;
+    margin-left: 500px;
+}
+
+nav h1 {
+    font-size: 35px;
+}
+
+nav .nav-list {
+    display: none;
+}
+
+.section_one .showcase_area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 1em;
+    text-align: center;
+}
+
+.showcase_area img {
+    height: 750px;
+    width: 800px;
+}
+
+.showcase_area .display_text {
+    position: relative;
+    bottom: 8rem;
+    left: 7rem
+}
+
+.display_text h1 {
+    font-size: 3.5rem;
+    height: 80px;
+    width: 550px;
+    line-height: 1.5;
+}
+
+.display_text button {
+   margin-top: 3em;
+   width: 500px;
+   height: 90px;
+   font-size: 2.5rem;
+   border-radius: 10px;
+   border-style: none;
+   outline: none;
+   background-color: rgba(17, 180, 112, 0.822);
+   color: #fff;
+   margin-left: 30px;
+}
+
+
+/* section two styling */
+
+.section_two {
+    background-color: rgba(20, 17, 17, 0.89);
+    height: 120rem;
+    width: 865px;
+    color: #fff;
+    text-align: center;
+    padding-right: 20px;
+}
+
+.section_two h2 {
+    font-size: 2.5rem;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.section_two img {
+    height: 400px;
+    width: 400;
+}
+
+.section_two .advert_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.advert_section figcaption a {
+    color: #fff;
+    font-size:2rem;
+}
+
+/* section three styling */
+
+.testimonial_section {
+    height: 150em;
+    background-color: rgba(241, 18, 18, 0.712);
+    color: #fff;
+    width: 865px;
+}
+
+.testimonial_section h2 {
+    padding-top: 2em;
+    padding-bottom: 1.5em;
+    font-size: 3rem;
+}
+
+.customer_testimonials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.customer_testimonials img {
+    height: 400px;
+    width: 380px;
+    border-radius: 340px;
+    padding-top: 2em;
+}
+
+.customer_testimonials  h4 {
+    padding-top: 1.2em;
+    font-size: 2rem;
+}
+
+.customer_testimonials p {
+    width: 400px;
+    height: 70px;
+    font-size: 1.5rem;
+    margin-left: 220px;
+}
+
+/* section four */
+
+.video_section {
+    height: 45em;
+    width: 865px;
+    background-color: rgb(15, 139, 240);
+    text-align: center;
+    color: #fff;
+}
+
+.video_section h2 {
+    padding-top: 1.5em;
+    font-size: 3rem;
+}
+
+.video_section .video_box video {
+    height: 600px;
+    width: 700px;
+    padding-bottom: 5em;
+}
+
+/* section five */
+
+.mail_section {
+    height: 32em;
+    width: 865px;
+    text-align: center;
+}
+
+.mail_section h2 {
+    padding-top: 3em;
+    font-size: 3rem;
+    padding-bottom: 1em;
+}
+
+.mail_section input {
+    width: 650px;
+    height: 70px;
+    border-radius: 10px;
+    outline: none;
+    border-style: none;
+    background-color: rgba(207, 189, 189, 0.733);
+    text-align: center;
+    color: #000000;
+    font-size: 1.5rem;
+}
+
+.mail_section button {
+    width: 250px;
+    height: 75px;
+    background-color: rgba(241, 18, 18, 0.712);
+    color: #fff;
+    margin-top: 1.5em;
+    border-style: none;
+    border-radius: 10px;
+    outline: none;
+    font-size: 1.5rem;
+}
+
+footer {
+    background-color: rgba(20, 17, 17, 0.89);
+    height: 200px;
+    width: 865px;
+    text-align: center;
+    color: #fff;
+}
+
+footer p {
+    padding-top: 1.5em;
+    font-size: 2rem;
+}
+
+footer .socials {
+    padding-top: 2em;
+    font-size: 1.5rem;
+}
+
+}
