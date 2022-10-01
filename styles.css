@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
 }
 
 /* section one styling */
@@ -245,13 +246,8 @@ footer {
 @media (max-width: 360px) {
    /* section one styling */
 
-* {
-    overflow-x: visible;
-}
-
 .section_one {
     height: 40rem;
-    background-color: #78E490;
 }
 
 .navbar {
@@ -278,7 +274,6 @@ nav ul {
 
 .showcase_area {
     display: block;
-    overflow-y: hidden;
 }
 
 .showcase_area .image_section img {
@@ -313,10 +308,9 @@ nav ul {
 
 .section_two {
     width: 360px;
-    height: 176.4rem;
+    height: 76.4rem;
     background: #272727;
     text-align: center;
-    overflow-y: hidden;
 }
 
 .section_two h2 {
@@ -398,13 +392,11 @@ nav ul {
 .customer_testimonials  .second_test, .third_test {
     position: relative;
     top: -70px;
-    overflow-y: hidden;
 }
 
 .customer_testimonials .third_test {
     position: relative;
     top: -120px;
-    overflow-y: hidden;
 }
 /* video section */
 
