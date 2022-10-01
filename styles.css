@@ -1,486 +1,205 @@
-/* global styling */
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@300&family=Montserrat:wght@200&family=Orbitron&family=Poppins:wght@200;300;400&display=swap');
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    overflow-x: hidden;
-}
-
-/* section one styling */
-
-.section_one {
-    width: 69.24rem;
-    height: 100vh;
-    max-height: 70rem;
-    margin: auto;
-}
-
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 4.92rem;
-}
-
-.navbar > i {
-    display: none;
-}
-
-nav h1 {
-    font-size: 1.8rem;
-}
-
-nav ul {
-    display: flex;
-    gap: 2.64rem;
-    list-style-type: none;
-}
-
-.nav-list a {
-    text-decoration: none;
-    color: #000;
-    font-weight: 400;
-}
-
-.showcase_area {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 6.44rem;
-}
-
-.showcase_area .image_section img {
-    width: 28.35rem;
-    height: 26rem;
-    margin-left: 1.2rem;
-    margin-top: 6rem;
-}
-
-.showcase_area .display_text h1 {
-    width: 29.46rem;
-    height: 8.04rem;
-    font-weight: 600;
-    font-size: 3rem;
-    line-height: 4.02rem;
-    margin-top: 5.5rem;
-}
-
-.showcase_area .display_text button {
-    width: 12.42rem;
-    height: 3.96rem;
-    background: #78E490;
-    border-radius: 0.48rem;
-    font-size: 1.5rem;
-    font-weight: 500;
-    color: #fff;
-    border-style: none;
-    outline: none;
-    margin-top: 1.2rem;
-}
-
-/* categories styling */
-
-.section_two {
-    width: 100vw;
-    height: 42rem;
-    background: #272727;
-    text-align: center;
-}
-
-.section_two h2 {
-    height: 2.28rem;
-    padding-top: 4.32rem;
-    font-weight: 700;
-    font-size: 1.5rem;
-    line-height: 2.28rem;
-    color: #FFFFFF;
-    padding-bottom: 7.54rem;
-}
-
-.section_two .advert_section {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.advert_section figcaption a {
-    text-decoration: none;
-    height: 2.28rem;
-    padding-top: 1.2rem;
-    font-weight: 500;
-    font-size: 1.5rem;
-    line-height: 2.28rem;
-    color: #FFFFFF;
-}
-
-
-/* testimonial styling */
-
-.testimonial_section {
-    width: 100%;
-    max-width: 100vw;
-    height: 36rem;
-    background: #eb5757;
-    text-align: center;
-    color: #fff;
-}
-
-.testimonial_section h2 {
-    padding-top: 3.72rem;
-    padding-bottom: 4.92rem;
-    font-weight: 700;
-    font-size: 1.5rem;
-    line-height: 2.28rem;
-}
-
-.customer_testimonials img {
-    width: 10.66rem;
-    height: 10.22rem;
-    border-radius: 220px;
-    margin-bottom: 1.2rem;
-}
-
-.testimonial_section .customer_testimonials {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 8rem;
-}
-
-.customer_testimonials h4 {
-    height: 2.28rem;
-    font-weight: 500;
-    font-size: 1.5rem;
-    line-height: 2.28rem;
-    margin-bottom: 1.2rem;
-}
-
-.customer_testimonials p {
-    width: 15.9rem;
-    height: 5.52rem;
-    font-weight: 400;
-    font-size: 0.9rem;
-    line-height: 1.3rem;
-    text-align: center;
-}
-
-/* video section */
-
-.video_section {
-    width: 100%;
-    max-width: 100vw;
-    text-align: center;
-    padding-top: 1.93rem;
-    height: 29.75rem;
-    background-color: #2f80ed;
-    color: #fff;
-}
-
-.video_section h2 {
-    font-size: 1.56rem;
-    font-weight: 700;
-    padding-bottom: 2.37rem;
-}
-
-.video_section .video_box video {
-    width: 34.12rem;
-    height: 17.68rem;
-}
-
-/* mail section */
-
-.mail_section {
-    width: 100%;
-    max-width: 100vw;
-    height: 31.56rem;
-    text-align: center;
-    padding-top: 8.12rem;
-}
-
-.mail_section h2 {
-    font-size: 1.56rem;
-    font-weight: 700;
-    color: #272727;
-    padding-bottom: 2.8rem;
-}
-
-.mail_section input {
-    width: 35.12rem;
-    text-align: center;
-    height: 3.8rem;
-    background: #EDEDED;
-    border: 1px solid #FCFCFC;
-    border-radius: 8px;
-    outline: none;
-    color: #ABA6A6;
-    margin-bottom: 2.25rem;
-}
-
-.mail_section button {
-    height: 3.18rem;
-    width: 15.75rem;
-    color: #fff;
-    background: #EB5757;
-    outline: none;
-    border-style: none;
-    border-radius: 8px;
-}
-
-/* copyright section */
-
-footer {
-    height: 13.75rem;
-    width: 100%;
-    max-width: 100vw;
-    text-align: center;
-    color: #fff;
-    background-color: #4b4747;
-    padding-top: 6.87rem;
-}
-
-/* mobile design */
-
-@media (max-width: 360px) {
-   /* section one styling */
-
-.section_one {
-    height: 40rem;
-}
-
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    height: 4.92rem;
-    gap: 9.56rem;
-    margin-left: 2.18rem;
-}
-
-.navbar > i {
-    display: flex;
-    font-size: 25px;
-}
-
-nav h1 {
-    font-size: 1.25rem;
-}
-
-nav ul {
-    display: none;
-}
-
-.showcase_area {
-    display: block;
-}
-
-.showcase_area .image_section img {
-    width: 28rem;
-    height: 20rem;
-    margin-top: 20px;
-    padding-right: 110px;
-}
-
-.showcase_area .display_text h1 {
-    width: 18.68rem;
-    height: 7rem;
-    font-weight: 600;
-    font-size: 1.8rem;
-    margin-top: 5px;
-    margin-left: 60px;
-    line-height: 1.3;
-}
-
-.showcase_area .display_text button {
-    width: 11.68rem;
-    height: 2.75rem;
-    background: #78E490;
-    font-size: 1rem;
-    font-weight: 500;
-    color: #fff;
-    margin-left: 90px;
-    margin-top: -30px;
-}
-
-/* categories styling */
-
-.section_two {
-    width: 360px;
-    height: 76.4rem;
-    background: #272727;
-    text-align: center;
-}
-
-.section_two h2 {
-    font-weight: 700;
-    font-size: 1.5rem;
-    overflow-y: hidden;
-    color: #FFFFFF;
-    margin-bottom: -40px;
-}
-
-.section_two img {
-    width: 13.75rem;
-    height: 15rem;
-}
-
-.advert_section figcaption a {
-    text-decoration: none;
-    height: 2.28rem;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 2.28rem;
-    color: #FFFFFF;
-    margin-bottom: 6rem;
-}
-
-.advert_section #shirt, #trouser{
-    padding-bottom: 4.5rem;
-}
-
-/* testimonial styling */
-
-.testimonial_section {
-    width: 360px;
-    height: 84rem;
-    background: #eb5757;
-    text-align: center;
-    color: #fff;
-    overflow-y: hidden;
-}
-
-.testimonial_section h2 {
-    padding-top: 3.72rem;
-    padding-bottom: 2.87rem;
-    font-weight: 700;
-    font-size: 1.5rem;
-}
-
-.customer_testimonials img {
-    width: 10.66rem;
-    height: 10.22rem;
-    border-radius: 220px;
-    margin-bottom: 1.2rem;
-}
-
-.testimonial_section .customer_testimonials {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 8rem;
-}
-
-.customer_testimonials h4 {
-    height: 2.28rem;
-    font-weight: 500;
-    font-size: 1.5rem;
-    line-height: 2.28rem;
-    margin-bottom: 1.2rem;
-}
-
-.customer_testimonials p {
-    width: 15.9rem;
-    height: 5.52rem;
-    font-weight: 400;
-    font-size: 0.9rem;
-    line-height: 1.3rem;
-    text-align: center;
-}
-
-.customer_testimonials  .second_test, .third_test {
-    position: relative;
-    top: -70px;
-}
-
-.customer_testimonials .third_test {
-    position: relative;
-    top: -120px;
-}
-/* video section */
-
-.video_section {
-    width: 360px;
-    height: 10rem;
-    text-align: center;
-    padding-top: 1.5rem;
-    height: 29.75rem;
-    background-color: #2f80ed;
-    color: #fff;
-    overflow-y: hidden;
-}
-
-.video_section h2 {
-    font-size: 1rem;
-    font-weight: 700;
-    padding-bottom: 1.8rem;
-}
-
-.video_section .video_box video {
-    width: 17.12rem;
-    height: 9rem;
-}
-
-/* mail section */
-
-.mail_section {
-    width: 360px;
-    height: 20.18rem;
-    text-align: center;
-    position: relative;
-    top: -90px;
-}
-
-.mail_section h2 {
-    font-size: 15px;
-    font-weight: 700;
-    color: #272727;
-    padding-top: 30px;
-    padding-bottom: 20px;
-}
-
-.mail_section input {
-    width: 16.25rem;
-    text-align: center;
-    height: 2.4rem;
-    background: #EDEDED;
-    border: 1px solid #FCFCFC;
-    border-radius: 8px;
-    outline: none;
-    color: #ABA6A6;
-}
-
-.mail_section button {
-    height: 2rem;
-    width: 10rem;
-    color: #fff;
-    background: #EB5757;
-    outline: none;
-    border-style: none;
-    border-radius: 8px;
-}
-
-/* copyright section */
-
-footer {
-    height: 11rem;
-    width: 100%;
-    max-width: 100vw;
-    text-align: center;
-    color: #fff;
-    background-color: #4b4747;
-    padding-top: 6.87rem;
-    overflow-y: hidden;
-}
-
-footer >p {
-    position: relative;
-    top: -40px;
-}
-
-footer .socials {
-    position: relative;
-    top: -30px;
-}
+
+@media (min-width: 320px ) and (max-width: 460px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .section_one .navbar ul {
+        display: none;
+    }
+
+    /* section one styling */
+    .section_one {
+        height: 40rem;
+        color: #10100e;
+        padding-right:1.18rem;
+        padding-left: 2.18rem;
+        padding-top: 1.75rem;
+
+    }
+
+    .section_one .navbar {
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.25rem;
+    }
+
+    .section_one .navbar .mdi-menu {
+        font-size: 25px;
+    }
+
+    .section_one .showcase_area {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .section_one .showcase_area img {
+        width: 22rem;
+        height: 20rem;
+        margin-top: 2rem;
+    }
+
+    .section_one .showcase_area .display_text{
+        margin-top: -20px;
+    }
+
+    .display_text h1 {
+        font-size: 1.87rem;
+        font-weight: 600;
+        width: 18.68rem;
+        height: 5rem;
+        line-height: 2.50rem;
+        margin-bottom: 2.12rem;
+    }
+
+    .display_text button {
+        color: #fff;
+        background-color: #78e490;
+        width: 11.68rem;
+        height: 2.75rem;
+        font-size: 15px;
+        justify-content: center;
+        border-style: none;
+        outline: none;
+    }
+
+    /* category styling */
+
+    .section_two {
+        height: 76.43rem;
+        background-color: #272727;
+        text-align: center;
+        color: #fff;
+    }
+
+    .section_two h2 {
+        font-size: 1.56rem;
+        font-weight: 700;
+        padding-top: 2.75rem;
+        padding-bottom: 2.75rem;
+    }
+
+    .section_two img {
+        width: 14.25rem;
+        height: 15.62rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .section_two a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .section_two .advert_section figcaption {
+        margin-bottom: 5.06rem;
+    }
+
+    /* testimonial section */
+
+    .testimonial_section {
+        height: 84rem;
+        background-color: #eb5757;
+        color: #fff;
+        text-align: center;
+    }
+
+    .testimonial_section h2 {
+        font-size: 1.56rem;
+        font-weight: 700;
+        padding-top: 4.31rem;
+        padding-bottom: 2.87rem;
+    }
+
+    .testimonial_section .customer_testimonials img {
+        border-radius: 100px;
+        margin-bottom: 1.25rem;
+    }
+
+    .testimonial_section .customer_testimonials h4 {
+        font-size: 1.56rem;
+        font-weight: 500;
+        margin-bottom: 0.8rem;
+    }
+
+    .testimonial_section .customer_testimonials p {
+        width: 18rem;
+        height: 5.75rem;
+        font-size: 15px;
+        font-weight: 400;
+        margin-bottom: 5.5rem;
+        margin-left: 45px;
+    }
+
+    /* video section */
+
+    .video_section {
+        height: 15.62rem;
+        background-color: #2f80ed;
+        color: #fff;
+        text-align: center;
+    }
+
+    .video_section h2 {
+        padding-top: 1.56rem;
+        padding-bottom: 1.81rem;
+        font-size: 15px;
+        font-weight: 700;
+    }
+
+    /* mail section */
+
+    .mail_section {
+        height: 18.43rem;
+        text-align: center;
+    }
+
+    .mail_section h2 {
+        padding-top: 4.68rem;
+        padding-bottom: 1.25rem;
+        font-size: 15px;
+        font-weight: 700;
+        color: #272727;
+    }
+
+    .mail_section input {
+        width: 16.25rem;
+        height: 2.43rem;
+        outline: none;
+        border-style: none;
+        background-color: #ededed;
+        font-size: 10px;
+        text-align: center;
+        border-radius: 8px;
+        margin-bottom: 1.93rem;
+    }
+
+    .mail_section button {
+        height: 2.43rem;
+        width: 9rem;
+        background-color: #eb5757;
+        color: #fff;
+        font-size: 10px;
+        border-radius: 8px;
+        outline: none;
+        border-style: none;
+    }
+
+    /* footer */
+
+    footer {
+        background-color: #4b4747;
+        color: #fff;
+        height: 15.62rem;
+        text-align: center;
+    }
+    footer p {
+        padding-top: 6.56rem;
+    }
 }
