@@ -5,422 +5,482 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
 }
 
 /* section one styling */
 
 .section_one {
-    height: 43.75em;
+    width: 69.24rem;
+    height: 100vh;
+    max-height: 70rem;
+    margin: auto;
 }
 
-.mdi-menu {
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 4.92rem;
+}
+
+.navbar > i {
     display: none;
 }
 
-.section_one nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 2.4rem; 
-}
-
 nav h1 {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
 }
 
-nav .nav-list {
+nav ul {
     display: flex;
-}
-
-.nav-list li,a {
-    text-decoration: none;
+    gap: 2.64rem;
     list-style-type: none;
-    color: #000000;
-    margin-left: 1.4rem;
-    font-size: 1.11rem;
 }
 
-.section_one .showcase_area {
+.nav-list a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 400;
+}
+
+.showcase_area {
     display: flex;
-    justify-content: space-evenly;
-    padding-top: 1em;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6.44rem;
 }
 
-.showcase_area img {
-    height: 500px;
-    width: 550px;
-    margin-right: 70px;
+.showcase_area .image_section img {
+    width: 28.35rem;
+    height: 26rem;
+    margin-left: 1.2rem;
+    margin-top: 6rem;
 }
 
-.showcase_area .display_text {
-    margin-right: 9em;
-    padding-top: 7em;
+.showcase_area .display_text h1 {
+    width: 29.46rem;
+    height: 8.04rem;
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 4.02rem;
+    margin-top: 5.5rem;
 }
 
-.display_text h1 {
-    font-size: 2.5rem;
-    height: 40px;
-    width: 470px;
-    line-height: 1.5;
+.showcase_area .display_text button {
+    width: 12.42rem;
+    height: 3.96rem;
+    background: #78E490;
+    border-radius: 0.48rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #fff;
+    border-style: none;
+    outline: none;
+    margin-top: 1.2rem;
 }
 
-.display_text button {
-   margin-top: 5em;
-   width: 200px;
-   height: 70px;
-   font-size: 1.5rem;
-   border-radius: 10px;
-   border-style: none;
-   outline: none;
-   background-color: rgba(17, 180, 112, 0.822);
-   color: #fff;
-}
-
-/* section two styling */
+/* categories styling */
 
 .section_two {
-    background-color: rgba(20, 17, 17, 0.89);
+    width: 100vw;
+    height: 42rem;
+    background: #272727;
     text-align: center;
-    height: 32em;
-    color: #fff;
 }
 
 .section_two h2 {
-    padding-top: 2em;
-    padding-bottom: 2em;
+    height: 2.28rem;
+    padding-top: 4.32rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2.28rem;
+    color: #FFFFFF;
+    padding-bottom: 7.54rem;
 }
 
 .section_two .advert_section {
     display: flex;
-    justify-content: center;
-    gap: 5.5rem;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .advert_section figcaption a {
-    color: #fff;
-    font-size:1.5rem;
+    text-decoration: none;
+    height: 2.28rem;
+    padding-top: 1.2rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2.28rem;
+    color: #FFFFFF;
 }
 
-/* section three styling */
+
+/* testimonial styling */
 
 .testimonial_section {
-    height: 45em;
-    background-color: rgba(241, 18, 18, 0.712);
+    width: 100%;
+    max-width: 100vw;
+    height: 36rem;
+    background: #eb5757;
     text-align: center;
     color: #fff;
 }
 
 .testimonial_section h2 {
-    padding-top: 2em;
-    padding-bottom: 4em;
-    font-size: 2rem;
-}
-
-.customer_testimonials {
-    display: flex;
-    justify-content: center;
-    gap: 5.5rem
+    padding-top: 3.72rem;
+    padding-bottom: 4.92rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2.28rem;
 }
 
 .customer_testimonials img {
-    height: 200px;
-    width: 200px;
-    border-radius: 120px;
+    width: 10.66rem;
+    height: 10.22rem;
+    border-radius: 220px;
+    margin-bottom: 1.2rem;
 }
 
-.customer_testimonials  h4 {
-    padding: 1.2em;
+.testimonial_section .customer_testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8rem;
+}
+
+.customer_testimonials h4 {
+    height: 2.28rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2.28rem;
+    margin-bottom: 1.2rem;
 }
 
 .customer_testimonials p {
-    width: 300px;
-    height: 70px;
+    width: 15.9rem;
+    height: 5.52rem;
+    font-weight: 400;
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+    text-align: center;
 }
 
-/* section four */
+/* video section */
 
 .video_section {
-    height: 35em;
-    background-color: rgb(15, 139, 240);
+    width: 100%;
+    max-width: 100vw;
     text-align: center;
+    padding-top: 1.93rem;
+    height: 29.75rem;
+    background-color: #2f80ed;
     color: #fff;
 }
 
 .video_section h2 {
-    padding-top: 2em;
+    font-size: 1.56rem;
+    font-weight: 700;
+    padding-bottom: 2.37rem;
 }
 
 .video_section .video_box video {
-    height: 400px;
-    width: 500px;
+    width: 34.12rem;
+    height: 17.68rem;
 }
 
-/* section five */
+/* mail section */
 
 .mail_section {
-    height: 32em;
-    
+    width: 100%;
+    max-width: 100vw;
+    height: 31.56rem;
     text-align: center;
+    padding-top: 8.12rem;
 }
 
 .mail_section h2 {
-    padding-top: 5em;
-    font-size: 2rem;
-    padding-bottom: 1em;
+    font-size: 1.56rem;
+    font-weight: 700;
+    color: #272727;
+    padding-bottom: 2.8rem;
 }
 
 .mail_section input {
-    width: 600px;
-    height: 60px;
-    border-radius: 10px;
-    outline: none;
-    border-style: none;
-    background-color: rgba(207, 189, 189, 0.733);
+    width: 35.12rem;
     text-align: center;
-    color: #000000;
+    height: 3.8rem;
+    background: #EDEDED;
+    border: 1px solid #FCFCFC;
+    border-radius: 8px;
+    outline: none;
+    color: #ABA6A6;
+    margin-bottom: 2.25rem;
 }
 
 .mail_section button {
-    width: 150px;
-    height: 55px;
-    background-color: rgba(241, 18, 18, 0.712);
+    height: 3.18rem;
+    width: 15.75rem;
     color: #fff;
-    margin-top: 1.5em;
-    border-style: none;
-    border-radius: 10px;
+    background: #EB5757;
     outline: none;
-    font-size: 1rem;
+    border-style: none;
+    border-radius: 8px;
 }
 
 /* copyright section */
 
 footer {
-    background-color: rgba(20, 17, 17, 0.89);
-    height: 200px;
+    height: 13.75rem;
+    width: 100%;
+    max-width: 100vw;
     text-align: center;
     color: #fff;
+    background-color: #4b4747;
+    padding-top: 6.87rem;
 }
 
-footer p {
-    padding-top: 4em;
-}
+/* mobile design */
 
-footer .socials {
-    padding-top: 2em;
-}
-
-/* media queries */
-
-@media only screen and (max-width: 320px) {
-    /* section one styling */
+@media (max-width: 360px) {
+   /* section one styling */
 
 .section_one {
-    height: 80em;
-    width: 320px;
+    height: 40rem;
 }
 
-.mdi-menu {
-    display: block;
-    font-size: 50px;
-    margin-left: 500px;
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 4.92rem;
+    gap: 9.56rem;
+    margin-left: 2.18rem;
+}
+
+.navbar > i {
+    display: flex;
+    font-size: 25px;
 }
 
 nav h1 {
-    font-size: 35px;
+    font-size: 1.25rem;
 }
 
-nav .nav-list {
+nav ul {
     display: none;
 }
 
-.section_one .showcase_area {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-top: 1em;
-    text-align: center;
+.showcase_area {
+    display: block;
 }
 
-.showcase_area img {
-    height: 750px;
-    width: 800px;
+.showcase_area .image_section img {
+    width: 28rem;
+    height: 20rem;
+    margin-top: 20px;
+    padding-right: 110px;
 }
 
-.showcase_area .display_text {
-    position: relative;
-    bottom: 8rem;
-    left: 7rem
+.showcase_area .display_text h1 {
+    width: 18.68rem;
+    height: 7rem;
+    font-weight: 600;
+    font-size: 1.8rem;
+    margin-top: 5px;
+    margin-left: 60px;
+    line-height: 1.3;
 }
 
-.display_text h1 {
-    font-size: 3.5rem;
-    height: 80px;
-    width: 550px;
-    line-height: 1.5;
+.showcase_area .display_text button {
+    width: 11.68rem;
+    height: 2.75rem;
+    background: #78E490;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+    margin-left: 90px;
+    margin-top: -30px;
 }
 
-.display_text button {
-   margin-top: 3em;
-   width: 500px;
-   height: 90px;
-   font-size: 2.5rem;
-   border-radius: 10px;
-   border-style: none;
-   outline: none;
-   background-color: rgba(17, 180, 112, 0.822);
-   color: #fff;
-   margin-left: 30px;
-}
-
-
-/* section two styling */
+/* categories styling */
 
 .section_two {
-    background-color: rgba(20, 17, 17, 0.89);
-    height: 120rem;
-    width: 865px;
-    color: #fff;
+    width: 360px;
+    height: 76.4rem;
+    background: #272727;
     text-align: center;
-    padding-right: 20px;
 }
 
 .section_two h2 {
-    font-size: 2.5rem;
-    padding-top: 2em;
-    padding-bottom: 2em;
+    font-weight: 700;
+    font-size: 1.5rem;
+    overflow-y: hidden;
+    color: #FFFFFF;
+    margin-bottom: -40px;
 }
 
 .section_two img {
-    height: 400px;
-    width: 400;
-}
-
-.section_two .advert_section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    width: 13.75rem;
+    height: 15rem;
 }
 
 .advert_section figcaption a {
-    color: #fff;
-    font-size:2rem;
+    text-decoration: none;
+    height: 2.28rem;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 2.28rem;
+    color: #FFFFFF;
+    margin-bottom: 6rem;
 }
 
-/* section three styling */
+.advert_section #shirt, #trouser{
+    padding-bottom: 4.5rem;
+}
+
+/* testimonial styling */
 
 .testimonial_section {
-    height: 150em;
-    background-color: rgba(241, 18, 18, 0.712);
+    width: 360px;
+    height: 84rem;
+    background: #eb5757;
+    text-align: center;
     color: #fff;
-    width: 865px;
+    overflow-y: hidden;
 }
 
 .testimonial_section h2 {
-    padding-top: 2em;
-    padding-bottom: 1.5em;
-    font-size: 3rem;
-}
-
-.customer_testimonials {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+    padding-top: 3.72rem;
+    padding-bottom: 2.87rem;
+    font-weight: 700;
+    font-size: 1.5rem;
 }
 
 .customer_testimonials img {
-    height: 400px;
-    width: 380px;
-    border-radius: 340px;
-    padding-top: 2em;
+    width: 10.66rem;
+    height: 10.22rem;
+    border-radius: 220px;
+    margin-bottom: 1.2rem;
 }
 
-.customer_testimonials  h4 {
-    padding-top: 1.2em;
-    font-size: 2rem;
+.testimonial_section .customer_testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8rem;
+}
+
+.customer_testimonials h4 {
+    height: 2.28rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2.28rem;
+    margin-bottom: 1.2rem;
 }
 
 .customer_testimonials p {
-    width: 400px;
-    height: 70px;
-    font-size: 1.5rem;
-    margin-left: 220px;
+    width: 15.9rem;
+    height: 5.52rem;
+    font-weight: 400;
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+    text-align: center;
 }
 
-/* section four */
+.customer_testimonials  .second_test, .third_test {
+    position: relative;
+    top: -70px;
+}
+
+.customer_testimonials .third_test {
+    position: relative;
+    top: -120px;
+}
+/* video section */
 
 .video_section {
-    height: 45em;
-    width: 865px;
-    background-color: rgb(15, 139, 240);
+    width: 360px;
+    height: 10rem;
     text-align: center;
+    padding-top: 1.5rem;
+    height: 29.75rem;
+    background-color: #2f80ed;
     color: #fff;
+    overflow-y: hidden;
 }
 
 .video_section h2 {
-    padding-top: 1.5em;
-    font-size: 3rem;
+    font-size: 1rem;
+    font-weight: 700;
+    padding-bottom: 1.8rem;
 }
 
 .video_section .video_box video {
-    height: 600px;
-    width: 700px;
-    padding-bottom: 5em;
+    width: 17.12rem;
+    height: 9rem;
 }
 
-/* section five */
+/* mail section */
 
 .mail_section {
-    height: 32em;
-    width: 865px;
+    width: 360px;
+    height: 20.18rem;
     text-align: center;
+    position: relative;
+    top: -90px;
 }
 
 .mail_section h2 {
-    padding-top: 3em;
-    font-size: 3rem;
-    padding-bottom: 1em;
+    font-size: 15px;
+    font-weight: 700;
+    color: #272727;
+    padding-top: 30px;
+    padding-bottom: 20px;
 }
 
 .mail_section input {
-    width: 650px;
-    height: 70px;
-    border-radius: 10px;
-    outline: none;
-    border-style: none;
-    background-color: rgba(207, 189, 189, 0.733);
+    width: 16.25rem;
     text-align: center;
-    color: #000000;
-    font-size: 1.5rem;
+    height: 2.4rem;
+    background: #EDEDED;
+    border: 1px solid #FCFCFC;
+    border-radius: 8px;
+    outline: none;
+    color: #ABA6A6;
 }
 
 .mail_section button {
-    width: 250px;
-    height: 75px;
-    background-color: rgba(241, 18, 18, 0.712);
+    height: 2rem;
+    width: 10rem;
     color: #fff;
-    margin-top: 1.5em;
-    border-style: none;
-    border-radius: 10px;
+    background: #EB5757;
     outline: none;
-    font-size: 1.5rem;
+    border-style: none;
+    border-radius: 8px;
 }
+
+/* copyright section */
 
 footer {
-    background-color: rgba(20, 17, 17, 0.89);
-    height: 200px;
-    width: 865px;
+    height: 11rem;
+    width: 100%;
+    max-width: 100vw;
     text-align: center;
     color: #fff;
+    background-color: #4b4747;
+    padding-top: 6.87rem;
+    overflow-y: hidden;
 }
 
-footer p {
-    padding-top: 1.5em;
-    font-size: 2rem;
+footer >p {
+    position: relative;
+    top: -40px;
 }
 
 footer .socials {
-    padding-top: 2em;
-    font-size: 1.5rem;
+    position: relative;
+    top: -30px;
 }
-
 }
