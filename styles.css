@@ -10,11 +10,25 @@
 
     .section_one .navbar ul {
         display: none;
+        background-color: #272727;
+        height: 120px;
+        padding: 10px;
+    }
+
+    .navbar ul li {
+        list-style: none;
+    }
+
+    .navbar ul li a {
+        text-decoration: none;
+        color: #FFF;
+        font-size: 15px;
+        font-weight: 500;
     }
 
     /* section one styling */
     .section_one {
-        height: 40rem;
+        height: 45rem;
         color: #10100e;
         padding-right:1.18rem;
         padding-left: 2.18rem;
@@ -22,12 +36,17 @@
 
     }
 
-    .section_one .navbar {
+    .topnav {
         display: flex;
         justify-content: space-between;
         font-size: 1.25rem;
     }
 
+    .section_one .navbar {
+        display: block;
+        
+    }
+    
     .section_one .navbar .mdi-menu {
         font-size: 25px;
     }
@@ -202,6 +221,33 @@
     footer p {
         padding-top: 6.56rem;
     }
+
+
+    /* shirt/trouser/cap styling---apply similar classes and id because they have the same structure */
+
+    .container {
+        background-color: #78e490;
+        padding: 10px 10px;
+    }
+
+    .container div h2 {
+        font-size: 15px;
+        margin-bottom: 1.52rem;
+        margin-top: 1.52rem;
+    }
+
+    .container a {
+        text-decoration: none;
+        border: 1px solid #10100e;
+        padding: 4px;
+        border-radius: 5px;
+        color: #10100e;
+    }
+
+    .container .topCategory, .midCategory, .bottomCategory {
+        height: 40rem;
+        background-color: #272727;
+    } 
 }
 
 /* tablet and desktop view */

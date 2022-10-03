@@ -1,17 +1,20 @@
-document.getElementById("btn").addEventListener("click", 
-function () {
-    alert('i am clicked');
-});
+// opening the mobile icon on mobile view
 
-document.getElementById('btn').addEventListener("click", function() {
-    document.getElementById('btn').style.backgroundColor = 'blue';
-});
+    const menuBar = document.getElementById("barIcon");
+    const menuList = document.getElementById("list");
+
+    menuBar.addEventListener("click", ()=> {
+        if (menuList.style.display === 'block') {
+            menuList.style.display = 'none';
+        } else {
+            menuList.style.display = 'block';
+        }
+    });
+
+// activating the shop-now button
+
+// Fecthing shirt/caps/trouser from an API
 
 
+// getting the email submitted to a database
 
-document.getElementById('email-btn').addEventListener("click", 
-function() {
-    alert('email submitted');
-});
-
-// testing the axios API and making xhr request
