@@ -226,8 +226,9 @@
     /* shirt/trouser/cap styling---apply similar classes and id because they have the same structure */
 
     .container {
-        background-color: #78e490;
         padding: 10px 10px;
+        display: flex;
+        flex-direction: column;
     }
 
     .container div h2 {
@@ -242,12 +243,32 @@
         padding: 4px;
         border-radius: 5px;
         color: #10100e;
+        width: 60px;
+        margin-bottom: 20px;
     }
 
     .container .topCategory, .midCategory, .bottomCategory {
-        height: 40rem;
-        background-color: #272727;
+        height: 60rem;
+        overflow-y: hidden;
     } 
+
+    .displayA, .displayB, .displayC {
+        padding-left: 30px;
+    }
+
+    .container img {
+        height: 200px;
+        width: 300px;
+    }
+    .container p {
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .container #price {
+        margin-bottom: 25px;
+        color: green;
+    }
+  
 }
 
 /* tablet and desktop view */
@@ -479,6 +500,52 @@ footer {
     color: #fff;
     background-color: #4b4747;
     padding-top: 6.87rem;
+}
+
+
+.container {
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container div h2 {
+    font-size: 15px;
+    margin-bottom: 1.52rem;
+    margin-top: 1.52rem;
+}
+
+.container a {
+    text-decoration: none;
+    border: 1px solid #10100e;
+    border-radius: 5px;
+    color: #10100e;
+    width: 100px;
+    height: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.container .topCategory, .midCategory, .bottomCategory {
+    height: 40rem;
+    background-color: #4b4747;
+} 
+
+.displayA, .displayB, .displayC {
+    padding-left: 30px;
+}
+
+.container img {
+    height: 100px;
+    width: 100px;
+}
+.container p {
+    font-size: 14px;
+    font-weight: 500;
+}
+.container #price {
+    margin-bottom: 25px;
+    color: green;
 }
 
 }

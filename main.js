@@ -11,10 +11,4 @@
         }
     });
 
-// activating the shop-now button
-
-// Fecthing shirt/caps/trouser from an API
-
-
-// getting the email submitted to a database
 
